@@ -2,6 +2,7 @@
 # Assignment folder 
 assignment/
 .DS_Store
+media/
 
 # test reports
 mochawesome-report/

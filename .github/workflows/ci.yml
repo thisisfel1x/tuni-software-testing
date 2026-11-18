@@ -11,7 +11,7 @@ permissions:
 jobs:
   test:
     name: Unit tests and coverage
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
