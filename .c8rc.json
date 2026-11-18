@@ -1,0 +1,23 @@
+{
+  "all": true,
+  "include": [
+    "src/toNumber.js",
+    "src/filter.js",
+    "src/clamp.js",
+    "src/divide.js",
+    "src/isEmpty.js",
+    "src/slice.js",
+    "src/chunk.js",
+    "src/toString.js",
+    "src/defaultTo.js",
+    "src/compact.js"
+  ],
+  "exclude": ["src/.internal/**"],
+  "reporter": ["text", "lcov", "html"],
+  "reports-dir": "coverage",
+  "per-file": true,
+  "lines": 95,
+  "statements": 95,
+  "functions": 100,
+  "branches": 90
+}
