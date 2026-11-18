@@ -1,0 +1,73 @@
+name: Defect
+description: Defect found by a test
+title: "[<file>] <short description>"
+labels: ["defect"]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      placeholder: src/divide.js
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version, environment
+      placeholder: commit 128f071, Node 24, Ubuntu (CI)
+    validations:
+      required: true
+  - type: input
+    id: test-case
+    attributes:
+      label: Test case, scenario
+      placeholder: DV-01, S1 page count and unit price
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: divide(6, 4)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result, oracle
+      placeholder: 1.5, JSDoc example in src/divide.js
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      placeholder: "1"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical (wrong money or price information, lost allergens, core flow blocked)
+        - Major (wrong result in a core function, workaround exists)
+        - Minor (wrong result in a rarely used function)
+        - Trivial (cosmetic or documentation only)
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 (fix before the function is used)
+        - P2 (fix before release)
+        - P3 (fix when the function is needed)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: failing test output, link to the CI run
