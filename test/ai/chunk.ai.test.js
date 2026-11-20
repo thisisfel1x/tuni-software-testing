@@ -19,7 +19,7 @@ function makeProducts(count) {
   return products
 }
 
-describe('chunk', () => {
+describe('chunk – AI-generated (Claude Opus 5.5, empty context)', () => {
   describe('normal cases', () => {
     it('AI-CH-01 splits an array evenly into chunks of the given size (JSDoc example 1)', () => {
       expect(chunk(['a', 'b', 'c', 'd'], 2)).to.deep.equal([['a', 'b'], ['c', 'd']])

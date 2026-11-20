@@ -6,7 +6,7 @@ The test files in `test/ai/` were written by an AI, not by the group. We keep th
 | --- | --- |
 | `chunk.prompt.md`, `toNumber.prompt.md` | The prompt, exactly as it was sent |
 | `chunk.response.md`, `toNumber.response.md` | The complete answer, unchanged |
-| `../../test/ai/chunk.ai.test.js`, `../../test/ai/toNumber.ai.test.js` | The code block from the answer, copied without any change |
+| `../../test/ai/chunk.ai.test.js`, `../../test/ai/toNumber.ai.test.js` | The code block from the answer, only the title of the top-level `describe` was changed |
 
 ## How the tests were generated
 

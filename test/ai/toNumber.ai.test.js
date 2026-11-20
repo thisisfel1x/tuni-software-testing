@@ -20,7 +20,7 @@ import toNumber from '../../src/toNumber.js'
 
 const isNegativeZero = (x) => Object.is(x, -0)
 
-describe('toNumber', () => {
+describe('toNumber – AI-generated (Claude Opus 5.5, empty context)', () => {
   describe('examples from the JSDoc', () => {
     it('AI-TN-01 returns the number 3.2 unchanged', () => {
       expect(toNumber(3.2)).to.equal(3.2)
