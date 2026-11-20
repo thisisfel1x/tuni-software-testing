@@ -39,7 +39,7 @@ Line, branch and function coverage of `chunk.js` and `toNumber.js` is 100 % with
 - AI-TN-48: `toNumber(10n)` throws `TypeError: Cannot convert a BigInt value to a number`.
 - AI-TN-49: `toNumber(Object.create(null))` throws `TypeError: Cannot convert object to primitive value`.
 - Both expected values come from reading `@returns {number}` as "never throws". The JSDoc does not say this directly, and the original lodash `toNumber` behaves the same. Neither input occurs in S1 to S3.
-- **Open:** the group still has to decide whether these are defects (new issues) or a wrong oracle of the AI (change the test in a separate commit). Until then they stay red, as the test plan requires.
+- **Decision:** not a defect, the oracle of the AI was wrong. The original lodash 4.17.21 throws the same two errors. Reported and closed as rejected in [#10](https://github.com/thisisfel1x/tuni-software-testing/issues/10). The two tests stay unchanged and red, #10 explains why they fail.
 
 ## Notes for the comparison in the report
 

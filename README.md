@@ -74,5 +74,6 @@ Defects are GitHub issues with the title format `[R-nn][function] short descript
 | --- | --- |
 | `status: new` | Reported by one group member, with the failing test and the CI run |
 | `status: confirmed` | Reproduced by the second group member |
+| `status: rejected` | Not a defect, closed with a reason, for example [#10](https://github.com/thisisfel1x/tuni-software-testing/issues/10) (AI-TN-48/49, wrong oracle of the AI) |
 
-The test plan also defines the states Fixed, Verified (the test passes in CI) and Closed, as well as Rejected and Duplicate. No defect has been fixed so far, so these states are not used yet.
+The test plan also defines the states Fixed, Verified (the test passes in CI), Closed and Duplicate. No defect has been fixed so far, so these states are not used yet.
